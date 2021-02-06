@@ -1,0 +1,191 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+	--primColor: rgb(28, 76, 235);
+}
+
+body {
+	background: var(--primColor);
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-width: 500px;
+	width: 600px;
+	min-height: 600px;
+	border: 2px solid black;
+	background-color: #547ebd;
+	margin: 100px auto;
+	border-radius: 50px 50px 0px 0px;
+}
+
+.filter {
+	margin-top: 1rem;
+}
+
+.filter > label {
+	margin-right: 10px;
+	color: white;
+}
+
+.filter > select {
+	padding: 0.25rem 0.2rem;
+	border-radius: 10px 0px 0px 0px;
+	outline: none;
+	color: blue;
+}
+
+.filter > button {
+	color: white;
+	background-color: var(--primColor);
+	padding: 0.25rem 0.2rem;
+	outline: none;
+	border-radius: 0px 10px 0px 0px;
+}
+
+.filter > button:hover {
+	color: var(--primColor);
+	background-color: rgb(248, 144, 144);
+	transition: ease-in 1s;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+
+	display: flex;
+	min-height: 10vh;
+	width: 80%;
+	margin: 2rem auto;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+form label {
+	color: white;
+}
+form input {
+	width: 100%;
+	height: 50px;
+	padding: 0.5rem 0.5rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	color: var(--primColor);
+	outline: none;
+}
+
+form > input::placeholder {
+	color: var(--primColor);
+}
+
+form > button {
+	color: white;
+	background-color: var(--primColor);
+	height: 50px;
+	padding: 0.5rem 0.5rem;
+	border-radius: 5px;
+	margin-left: 0.2rem;
+}
+form > button:hover {
+	color: var(--primColor);
+	background-color: rgb(248, 144, 144);
+	transition: ease-out 1s;
+}
+.todo-container {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.todo-form {
+	margin-top: 0.5rem;
+}
+
+.todo {
+	display: block;
+	justify-self: center;
+	align-items: center;
+	border: 2px solid black;
+	margin-top: 0.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	background-color: rgb(144, 186, 241);
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 3px 2px grey;
+}
+.todo:nth-child(even) {
+	background: rgb(102, 143, 231);
+}
+
+.todo:nth-child(odd) {
+	background: rgb(39, 138, 195);
+}
+
+.todo-mode {
+	padding: 0.5rem 0.5rem;
+	border-radius: 5px;
+	position: relative;
+}
+
+.todo-mode input {
+	width: 90%;
+	height: 40px;
+	padding: 0.5rem 0.5rem;
+	margin: 0.25rem 0.25rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	color: var(--primColor);
+}
+
+#icon1 {
+	position: absolute;
+	right: 3rem;
+	top: 1.5rem;
+	color: green;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+#icon2 {
+	position: absolute;
+	right: 0.75rem;
+	top: 1.5rem;
+	color: red;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+.title {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5rem 0.5rem;
+	max-width: 100%;
+	overflow: auto;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.icons {
+	padding: 0.5rem 0.5rem;
+	padding-left: 1rem;
+	color: var(--primColor);
+	font-size: 1rem;
+}
+
+.icon {
+	margin-left: 1rem;
+}
